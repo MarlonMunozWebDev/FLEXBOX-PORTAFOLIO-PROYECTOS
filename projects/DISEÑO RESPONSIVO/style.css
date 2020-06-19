@@ -1,0 +1,116 @@
+body {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
+
+.header {
+    background: greenyellow
+}
+
+.contenedor {
+    display: flex;
+}
+
+.aside {
+    background: RED;
+    flex-basis: 30%;
+}
+
+.contenido {
+    flex-basis: 70%;
+}
+
+.navegador {
+    background: purple;
+}
+
+.nosotros {
+    display: flex;
+}
+
+.seccion1 {
+    background: orange;
+    margin: 1rem;
+    flex-basis: 50%;
+}
+
+.seccion2 {
+    background: orange;
+    margin: 1rem;
+    flex-basis: 50%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+    background: #1E2E78;
+    margin: 0.5rem;
+    flex-basis: 10%;
+}
+
+.foto:nth-child(3) {
+    flex-basis: 50%;
+}
+
+.foto:nth-child(8) {
+    flex-basis: 50%;
+}
+
+.footer {
+    background: chartreuse;
+}
+
+@media screen and (max-width: 768px) {
+    .nosotros {
+        display: block;
+    }
+
+    .foto {
+        flex-basis: 28%;
+    }
+    
+    .foto:nth-child(3) {
+        flex-basis: 28%;
+    }
+    
+    .foto:nth-child(8) {
+        flex-basis: 28%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+     .foto {
+        flex-basis: 45%;
+    }
+    
+    .foto:nth-child(3) {
+        flex-basis: 45%;
+    }
+    
+    .foto:nth-child(8) {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .foto {
+        flex-basis: 43%;
+    }
+    
+    .foto:nth-child(3) {
+        flex-basis: 43%;
+    }
+    
+    .foto:nth-child(8) {
+        flex-basis: 43%;
+    }
+}
